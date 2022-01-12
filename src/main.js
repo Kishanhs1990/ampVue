@@ -4,7 +4,6 @@ import router from "./router";
 
 import "@aws-amplify/ui-components";
 
-import "@aws-amplify/ui-components";
 import {
   applyPolyfills,
   defineCustomElements,
@@ -14,7 +13,6 @@ import Amplify from "aws-amplify";
 import awsconfig from "./aws-exports";
 Amplify.configure(awsconfig);
 
-Vue.config.productionTip = false;
 Vue.config.ignoredElements = [/amplify-\w*/];
 
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
