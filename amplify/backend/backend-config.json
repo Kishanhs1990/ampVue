@@ -1,12 +1,14 @@
 {
   "auth": {
-    "ampvuea3d83c0e": {
+    "ampvuedev37c51dc0": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false,
       "frontendAuthConfig": {
-        "socialProviders": [],
+        "socialProviders": [
+          "GOOGLE"
+        ],
         "usernameAttributes": [],
         "signupAttributes": [
           "EMAIL"
@@ -23,20 +25,6 @@
           "EMAIL"
         ]
       }
-    }
-  },
-  "storage": {
-    "s326ddbf8b": {
-      "service": "S3",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": []
-    }
-  },
-  "hosting": {
-    "amplifyhosting": {
-      "service": "amplifyhosting",
-      "type": "cicd",
-      "lastPushTimeStamp": "2022-01-12T15:43:19.852Z"
     }
   }
 }
