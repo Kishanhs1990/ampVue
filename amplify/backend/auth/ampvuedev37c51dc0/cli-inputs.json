@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "ampvuea3d83c0e_identitypool_a3d83c0e",
-    "allowUnauthenticatedIdentities": true,
-    "resourceNameTruncated": "ampvuea3d83c0e",
-    "userPoolName": "ampvuea3d83c0e_userpool_a3d83c0e",
+    "identityPoolName": "ampvuedev37c51dc0_identitypool_37c51dc0",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "ampvue37c51dc0",
+    "userPoolName": "ampvuedev37c51dc0_userpool_37c51dc0",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,37 +31,22 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "ampvuea3d83c0e_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "ampvue37c51dc0_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "a3d83c0e",
-    "resourceName": "ampvuea3d83c0e",
+    "sharedId": "37c51dc0",
+    "resourceName": "ampvuedev37c51dc0",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "defaultSocial",
-    "userPoolGroupList": [],
-    "serviceName": "Cognito",
-    "usernameCaseSensitive": false,
-    "useEnabledMfas": true,
-    "authRoleArn": {
-      "Fn::GetAtt": [
-        "AuthRole",
-        "Arn"
-      ]
-    },
-    "unauthRoleArn": {
-      "Fn::GetAtt": [
-        "UnauthRole",
-        "Arn"
-      ]
-    },
-    "breakCircularDependency": true,
-    "dependsOn": [],
     "hostedUI": true,
-    "hostedUIDomainName": "ampvuea45bc786-a45bc786",
+    "hostedUIDomainName": "ampvuedev37c51dc0-37c51dc0",
     "authProvidersUserPool": [
       "Google"
     ],
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
-    "authProviders": [],
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:8080/\"],\"LogoutURLs\":[\"http://localhost:8080/\"]}"
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://staging.d2iyl9cz5o39b8.amplifyapp.com/\"],\"LogoutURLs\":[\"https://staging.d2iyl9cz5o39b8.amplifyapp.com/\"]}",
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
   }
 }
